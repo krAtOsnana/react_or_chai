@@ -3,9 +3,42 @@ import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-    
-    <App />
-    
-  
+function MyApp(){
+    return(
+        <div>
+            <h1>hellow react!!</h1>
+            <h4>*javaScript</h4>
+        </div>
+    )
+    /**
+     * whatever we write in this syntax at the end of the day it will parsed into object like tree structuree
+     *  like this-> eg..const reactElement={
+        type:"a",
+        props:{
+         href:"https://google.com"
+        },
+        children:"hellow custom React"
+        }
+        but writing this custon class wont work
+        because we use our custon key-value pair name 
+        and convention
+        we have to follow the coding convention of react library
+        and when we directly write object 
+        to run this we use syntax
+        reactElement not reactElement() or <reactElement/>
+        beacuse this is class and not a function
+     */
+}
+
+
+const AnotherElement=(
+        <a href='https://google.com' target='_blank'> visit google </a>
+        //
 )
+
+ReactDOM.createRoot(document.getElementById('root')).render(
+   AnotherElement 
+    //<MyApp/>
+    //MyApp()         //since MyApp is a function thats why we can also run like this
+                    //but we dont wse this syntax bcoz of optimization and code convention
+    )
