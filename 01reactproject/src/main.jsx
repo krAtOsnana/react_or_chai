@@ -36,9 +36,23 @@ const AnotherElement=(
         //
 )
 
+const reactElement=(
+    'p',
+     {},//attributes
+    "lorem50"
+    //variable injection
+)
+
 ReactDOM.createRoot(document.getElementById('root')).render(
-   AnotherElement 
-    //<MyApp/>
+  <div>
+    {reactElement} 
+    {AnotherElement} 
+    <App/>
+ </div>
     //MyApp()         //since MyApp is a function thats why we can also run like this
                     //but we dont wse this syntax bcoz of optimization and code convention
     )
+//****NOTE */
+
+//{AnotherElement} -->evaluated expression
+//evaluated expression --> final outcome not some if( ) or for()
