@@ -8,11 +8,26 @@ function App() {
   let [counter,setcounter]=useState(0)
   //it is a HOOK used to change state in UI
   var addValue=()=>{
-    if(counter<20){
+    if(counter<200){
        //counter++
-    setcounter(++counter)
-    }
+    // setcounter(counter+1)
+    // setcounter(counter+1)
+    // setcounter(counter+1)
+    // setcounter(counter+1)
+    // setcounter(counter+1)
+    // setcounter(counter+1)
+    // setcounter(++counter)
+    // setcounter(counter+1)
+    // setcounter(++counter)
+    // setcounter(++counter)
+    // setcounter(++counter)
+    setcounter((prevCounter)=>prevCounter+1)
+    setcounter((prevCounter)=>prevCounter+1)
+    setcounter((prevCounter)=>prevCounter+1)
    
+    
+   
+    }
   }
 
   let decval=()=>{
@@ -20,8 +35,16 @@ function App() {
       //counter--;
     setcounter(--counter)
     }
-      
-  }
+ }
+
+
+
+
+
+
+
+
+
   return (
     <>
       <h1>02Counter</h1>
