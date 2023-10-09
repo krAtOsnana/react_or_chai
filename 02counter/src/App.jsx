@@ -4,21 +4,21 @@ import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
-  //const [count, setCount] = useState(0)
-  //let counter=0;
+  
   let [counter,setcounter]=useState(0)
+  //it is a HOOK used to change state in UI
   var addValue=()=>{
     if(counter<20){
-       counter++
-    setcounter(counter)
+       //counter++
+    setcounter(++conter)
     }
    
   }
 
   let decval=()=>{
     if(counter>0){
-      counter--;
-    setcounter(counter)
+      //counter--;
+    setcounter(--counter)
     }
       
   }
