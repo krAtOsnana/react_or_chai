@@ -10,7 +10,7 @@ function App() {
   var addValue=()=>{
     if(counter<20){
        //counter++
-    setcounter(++conter)
+    setcounter(++counter)
     }
    
   }
